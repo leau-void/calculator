@@ -1,0 +1,108 @@
+html {
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  background: linear-gradient(45deg, red, blue);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  
+}
+
+#container {
+  margin: 50px auto;
+  padding: 15px;
+  width: 350px;
+  height: 550px;
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1.3fr repeat(5, 1fr);
+  grid-template-areas: 
+  "display display display display"
+  "clear plus-minus percentage divide"
+  "7 8 9 multiply"
+  "4 5 6 substract"
+  "1 2 3 add"
+  "zero zero decimal equal";
+  gap: 15px;
+  place-items: center;
+}
+
+#display {
+  color: #FEFEFE;
+  width: 100%;
+  max-width: 100%;
+  grid-area: display;
+  font-size: 500%;
+  text-align: right;
+  align-self: end;
+  font-weight: 300;
+}
+
+button {
+  border-radius: 100px;
+  max-height: 75px;
+  max-width: 75px;
+  width: 50px;
+  border: none;
+  width: 100%;
+  height: 100%;
+  font-size: 200%;
+  text-align: center;
+  line-height: fit-content;
+  transition: background-color 0.5s cubic-bezier(0,1.19,1,.87);
+
+}
+
+button:active {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+.utilities {
+  color: #020202;
+  background-color: #A6A6A6;
+}
+
+.numbers{
+  color: #F4F4F4;
+  background-color: #333333;
+}
+
+#decimal {
+  color: #F4F4F4;
+  background-color: #333333;
+}
+
+.operators {
+  color: #FCFCFC;
+  background-color: #FE9500;
+}
+
+#clear {
+  grid-area: clear;
+}
+
+#zero {
+  grid-area: zero;
+  padding-left: 30px;
+  text-align: start;
+  max-width: 165px;
+}
+
+button {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
