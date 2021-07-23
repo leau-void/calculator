@@ -46,6 +46,8 @@ body {
   font-weight: 300;
 }
 
+
+
 button {
   border-radius: 100px;
   max-height: 75px;
@@ -58,7 +60,6 @@ button {
   text-align: center;
   line-height: fit-content;
   transition: background-color 0.5s cubic-bezier(0,1.19,1,.87);
-
 }
 
 button:active {
@@ -79,6 +80,11 @@ button:active {
 #decimal {
   color: #F4F4F4;
   background-color: #333333;
+  transition: background-color 0.5s cubic-bezier(0,1.19,1,.87);
+}
+
+#decimal:active {
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .operators {
@@ -97,7 +103,29 @@ button:active {
   max-width: 165px;
 }
 
-button {
+#backspace-div {
+  position: absolute;
+  top: 50px;
+  height: 30px;
+  width: 40px;
+}
+
+#backspace {
+  font-size: 15px;
+  line-height: 30px;
+  height: 30px;
+  width: 30px;
+  color: white;
+  border-radius: 0;
+  background-color: transparent;
+  transition: background-color 0.5s cubic-bezier(0,1.19,1,.87);
+}
+
+#backspace:active {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+button, * {
   -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
      -khtml-user-select: none; /* Konqueror HTML */
