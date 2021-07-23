@@ -78,6 +78,12 @@ keyboardGuide.addEventListener("click", () => {
   }
 })
 
+document.addEventListener("keyup", () => {
+  let keyCode = event.keyCode;
+  document.querySelector(`button[data-key='${keyCode}']`).click();
+})
+
+
 function displayNum(value) {
  
   if (display.textContent === "0") display.textContent = "";

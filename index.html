@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">  </head>
   <body>
-
+    <div id="header">Link to my <a href="README.md">README</a> and my <a href="https://github.com/leau-void">Github</a>!</div>
     <div id ="keyboard">
       <div id="toggle-label">Toggle for Keyboard Compatility Guide</div>
       <div id="keyboard-guide">Numbers on the keyboard are taken as input and</div>
@@ -28,32 +28,32 @@
     
     <div id="container">
       <div id="backspace-div">
-        <button id="backspace">X</button>
+        <button id="backspace" data-key="8">X</button>
       </div>
       <div id="display">0</div>
-      <button id="clear" class="utilities">C</button>
-      <button id="plus-minus" class="utilities">⁺∕₋</button>
-      <button id="percentage" class="utilities">%</button>
-      <button id="divide" class="operators">÷</button>
+      <button id="clear" class="utilities" data-key="67">C</button>
+      <button id="plus-minus" class="utilities" data-key="90">⁺∕₋</button>
+      <button id="percentage" class="utilities" data-key="88">%</button>
+      <button id="divide" class="operators" data-key="68">÷</button>
 
-      <button value=7 class="numbers">7</button>
-      <button value=8 class="numbers">8</button>
-      <button value=9 class="numbers">9</button>
-      <button id="multiply" class="operators">×</button></button>
+      <button value=7 class="numbers" data-key="55">7</button>
+      <button value=8 class="numbers" data-key="56">8</button>
+      <button value=9 class="numbers" data-key="57">9</button>
+      <button id="multiply" class="operators" data-key="65">×</button></button>
 
-      <button value=4 class="numbers">4</button>
-      <button value=5 class="numbers">5</button>
-      <button value=6 class="numbers">6</button>
-      <button id="substract" class="operators">−</button>
+      <button value=4 class="numbers" data-key="52">4</button>
+      <button value=5 class="numbers" data-key="53">5</button>
+      <button value=6 class="numbers" data-key="54">6</button>
+      <button id="substract" class="operators" data-key="83">−</button>
 
-      <button value=1 class="numbers">1</button>
-      <button value=2 class="numbers">2</button>
-      <button value=3 class="numbers">3</button>
-      <button id="add" class="operators">+</button>
+      <button value=1 id="one" class="numbers" data-key="49">1</button>
+      <button value=2 class="numbers" data-key="50">2</button>
+      <button value=3 class="numbers" data-key="51">3</button>
+      <button id="add" class="operators" data-key="87">+</button>
 
-      <button value=0 class="numbers" id="zero">0</button>
-      <button id="decimal">.</button>
-      <button id="equal" class="operators">=</button>
+      <button value=0 class="numbers" id="zero" data-key="48">0</button>
+      <button id="decimal" data-key="76">.</button>
+      <button id="equal" class="operators" data-key="81">=</button>
     
     </div>
     
