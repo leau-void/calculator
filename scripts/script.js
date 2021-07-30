@@ -6,14 +6,27 @@ let lastOperator;
 let currentNumber = 0;
 let lastNumber;
 
+
+
+
 container.addEventListener("click", () => {
+
+
+
   let target = event.target;
+
+  if (target.id !== "display" && target.id !== "container") {
+    target.addEventListener("transitionend", () => target.classList.remove("active"))
+    target.classList.add("active")
+  }
+
   if (target.value) {
     if (currentNumber != null && currentNumber != undefined) {
       lastNumber = currentNumber;
       currentNumber = null;
       display.textContent = "";
     }
+
     displayNum(target.value);
 
   } else if (target.classList.contains("operators")) {

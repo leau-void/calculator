@@ -84,7 +84,6 @@ font-weight: bold;
 }
 
 
-
 button {
   border-radius: 100px;
   max-height: 75px;
@@ -96,10 +95,11 @@ button {
   font-size: 200%;
   text-align: center;
   line-height: fit-content;
-  transition: background-color 0.5s cubic-bezier(0,1.19,1,.87);
+  transition: background-color 0.3s linear;
+  outline: none;
 }
 
-button:active {
+#container .active {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
