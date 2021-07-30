@@ -15,9 +15,11 @@ container.addEventListener("click", () => {
 
   let target = event.target;
 
-  if (target.id !== "display" && target.id !== "container") {
+  if (!event.isTrusted) {
+    if (target.id !== "display" && target.id !== "container") {
     target.addEventListener("transitionend", () => target.classList.remove("active"))
     target.classList.add("active")
+    }
   }
 
   if (target.value) {
