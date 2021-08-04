@@ -23,6 +23,7 @@ container.addEventListener("click", () => {
   }
 
   if (target.value) {
+
     if (currentNumber != null && currentNumber != undefined) {
       lastNumber = currentNumber;
       currentNumber = null;
@@ -33,7 +34,7 @@ container.addEventListener("click", () => {
 
   } else if (target.classList.contains("operators")) {
 
-    if (!Number(display.textContent)) return;
+    if (Number(display.textContent) === NaN || Number(lastNumber) === NaN) return;
     
     currentNumber = Number(display.textContent);
     if (currentOperator == "equal") currentOperator = null;
